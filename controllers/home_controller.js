@@ -1,6 +1,6 @@
 module.exports.home = function(req, res) {
-    // return res.end('<h1>Express is up for Codeial!</h1>');       it is sending directly to the browser
-
+    console.log(req.cookies);          // printing cookies value on console
+    res.cookie('user_id',25);        // we can change the modify cookie here too
     return res.render('home', {
         title : 'Home'
     });
