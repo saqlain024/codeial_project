@@ -87,14 +87,13 @@ module.exports.createSession = function(req, res) {
 };
 
 // for signout
-// module.exports.logout = function(req, res){
-//     // if(err){ console.log('error in logout'); return; }
+module.exports.logout = function(req, res){
+    // if(err){ console.log('error in logout'); return; }
 
-//     // res.cookies.destroy()
+    res.clearCookie('user_id');
 
-//     return res.redirect('/users/sign-in');
-// };
-
+    return res.redirect('/users/profile');
+};
 
 
 //module.exports.actionName = function(req, res) { }
