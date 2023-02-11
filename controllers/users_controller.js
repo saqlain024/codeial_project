@@ -63,5 +63,17 @@ module.exports.createSession = function(req, res) {
 };
 
 
+module.exports.destroySession = function(req, res) {
+    req.logout(function(err) {
+        if (err) { return next(err); }
+        return res.redirect('/');
+    });
+    // req.logout();
+
+    // return res.redirect('/');
+};
+
+
+
 
 //module.exports.actionName = function(req, res) { }
