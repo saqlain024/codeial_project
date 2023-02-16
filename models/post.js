@@ -14,6 +14,6 @@ const postSchema = new mongoose.Schema({
         timestamps: true            //it added two fields in robo3T and these are 'created at', 'updated at'
 });
 
-const Post= mongoose.model('Post', postSchema);
+const Post = mongoose.model('Post', postSchema);
 
-module.exports = Post;
+module.exports = Post ;
