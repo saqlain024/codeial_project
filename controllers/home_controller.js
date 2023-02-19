@@ -12,7 +12,7 @@ try{
         //         posts : posts
         //     });
         // });
-    
+
         //above code 8-13 line is only fetching the user id 
         // but if we want to fetch the each user object then below code  will work for that 18-24 line
     

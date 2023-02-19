@@ -1,15 +1,11 @@
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 body #layout-main {
   background-color: lightblue;
   height: 100%;
-}
-body .flex-wrapper {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 /*# sourceMappingURL=layout.css.map */
